@@ -4,355 +4,654 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 767px)
-{
-	.container {
-		width: 90%;
-		margin: 0 auto;
-		max-width: 760px;
-	}
-
+@media (max-width: 576px) {
 	p,
-    button {
-      font-family: "Raleway", sans-serif;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
-
-	.grid {
-		display: grid;
-		grid-template-columns: auto 70%;
-		grid-template-rows: 85% 20%;
-		grid-template-areas:
-			"nav body"
-			"footer footer";
-		grid-column-gap: 0%;
-		margin-bottom: 0%;
-    min-width: 100vh;
+	button {
+		font-family: "Raleway", sans-serif;
 	}
 
-	body {
-		grid-area: body;
-	}	
-
-	footer {
-		grid-area: footer;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	}
-	
+
 	/*nav*/
 	header {
-		grid-area: nav;
-		padding: 10% 10% 100% 0.5%;
 		background-color: #a8003e;
-		color: white;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		height: 100vh;
-		width: 100%;
-		margin-top: 0%;
-		margin-left: 0%;
-	}
-
-	.row {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
 	}
 
 	.navBar {
 		list-style-type: none;
 		font-family: "Raleway", sans-serif;
 		text-decoration: none;
-		flex-wrap: nowrap;
-		margin-top: 20%;
-	}
-
-	.itemNav {
-		color: white; /*links de color a pesar de ser visitados o no*/
-		margin-bottom: 20%;
-		text-decoration: none;
-	}
-
-	li {
-		margin-top: 20%;
-	}
-
-	h2 {
-		margin-bottom: 12%;
+		margin-left: 2rem;
 	}
 
 	/*footer*/
-	footer {
+
+	.redes{
 		display: flex;
+		justify-content: space-between;
 		flex-direction: row;
+		padding: 1rem 2rem 1rem 2rem;
 		background-color: rebeccapurple;
-		height: 40%;
-    content: 100%;
-		padding: 1% 1% 7% 0%;
-    margin-bottom: 0%;
 	}
 
-	.redes {
+	.logoFooter {
+		justify-content: flex-start;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
 		flex-direction: row;
 	}
-  
-	.logoFooter {
-		display: flex;
-		justify-content: space-between;
-	}
-  
-	.nombreFooter {
-		display: flex;
-		color: white;
-		font-size: small;
-	}
-
-	.icon {
-		width: 5%;
-		margin-left: 1.5rem;
-		margin-right: 0.3rem;
-	  }
 
 	.icons {
 		display: flex;
-		justify-content: flex-end;
-		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
-	.logoWomapFooter {
-		width: 60%;
+	.nombreFooter {
+		color: white;
+	}
+
+	.logoWomapFooter{
+		width: 2rem;
+		height: 2rem;
+		margin-right: 0.5rem;
+	}
+
+	.icon {
+		width: 2rem;
+		height: 2rem;
+		margin-left: 1rem;
+		margin-right: 0.5rem;
+	}
+
+	/*inicio*/
+
+	.inicio {
+		margin-top: 10rem;
+		margin-left: 2rem;
+	}
+
+	/*sobre nosotras*/
+
+	.bodyNosotras {
+		margin: 5rem 2rem 2rem 3rem;
+	}
+
+	.pNos {
+		font-size: large;
+	}
+
+	.video {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 25px;
+		height: 0;
+	}
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	/*la app*/
+
+	.mockup1 {
+        width: 350px;
+		margin-left: 8rem;
+    }
+  
+    .txApp {
+        width: 400px;
+        height: 300px;
+        position: relative;
+        top: 1000;
+    }
+  
+    .infoApp {
+        font-size: large;
+        font-weight: 400;
+        flex-wrap: nowrap;
+        margin-left: 3rem;
+		margin-right: 3rem;
+        margin-top: 7rem;
+    }
+
+	/*preguntas*/
+
+    .pregFrec {
+		font-family: "Raleway", sans-serif;
+		color: #a8003e;
+		font-weight: 800;
+		margin-bottom: 0.5rem;
+        margin-top: 1rem;
+    }
+
+	.divImagen {
+        height: 20%;
+    }
+  
+    .imgMujeresVector {
+        width: 100%;
+		margin: 3rem 1rem 1rem 1rem;
+    }
+  
+	.preguntas{
+		margin-left: 2rem;
+	}
+    
+	.parrafoPregs {
+        margin-bottom: 2rem;
+		font-size: larger;
+    }
+
+	.parrafoPregs3 {
+		padding-bottom: 5rem;
+		font-size: larger;
+	}
+
+	/*contactanos*/
+
+    input {
+		border-color: #a8003e;
+		border-radius: 10px;
+		border-width: 3px;
+		height: 50px;
+		width: 250px;
+		margin-bottom: 5rem;
+	}
+
+	.datos {
+		display: flex;
+		margin-top: 12rem;
+		justify-content: center;
+		align-items: center;
+	}
+  
+	.dat{
+		margin-bottom: 1rem;
+	}
+
+	.datMsj {
+		margin-bottom: 1rem;
+		height: 180px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 990px)
+{
+	p,
+  	button {
+    font-family: "Raleway", sans-serif;
+  	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
+
+	.bodyInicio {
+		background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/inspirational-quotes-for-women-index-1607056020.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*");
+		height: 100%;
+	}
+
+	/*nav*/
+	header {
+		background-color: #a8003e;
+	}
+
+	.navBar {
+		list-style-type: none;
+		font-family: "Raleway", sans-serif;
+		text-decoration: none;
+		margin-left: 2rem;
+	}
+
+	/*inicio*/
+
+	.inicio {
+		background-color: rgba(255, 255, 255, 0.493);
+		height: 100vh;
+	}
+
+	.imagenTexto {
+		padding-top: 15rem;
+		padding-left: 4rem;
+	}
+
+	.imagenTexto {
+		justify-content: center;
+	}
+
+	.txInicio {
+		margin-bottom: 10rem;
+	}
+
+	/*footer*/
+
+	.redes{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 1rem 2rem 1rem 2rem;
+		background-color: rebeccapurple;
 	}
 
 	.logoFooter {
-		display: flex;
 		justify-content: flex-start;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+    .nombreFooter {
+      color: white;
+    }
+
+	.logoWomapFooter{
+		width: 2rem;
+		height: 2rem;
+		margin-right: 0.5rem;
+	}
+
+	.icon {
+		width: 2rem;
+		height: 2rem;
+		margin-left: 1rem;
+		margin-right: 0.5rem;
+	}
+
+	/*sobre nosotras*/
+
+	.titNos {
+		font-family: "Raleway", sans-serif;
+	}
+
+	.mainNosotras {
+		margin: 7rem 2rem 2rem 3rem;
+	}
+
+	.grilla {
+		display: grid;
+		grid-template-columns: 70% auto auto;
+		grid-template-rows: 25% 25% 55%;
+		grid-template-areas:
+			"nosotras . circ1"
+			"nosotras circ2 ."
+			"nosotras . circ3";
+		grid-column-gap: 2%;
+		grid-row-gap: 2%;
+		max-height: 90vh;
+		margin-bottom: 3rem;
+	}
+
+	.sobreNosotrasTx {
+		grid-area: nosotras;
+	}
+
+	.circTx1 {
+		grid-area: circ1;
+	}
+	
+	.circTx2 {
+		grid-area: circ2;
+	}
+	
+	.circTx3 {
+		grid-area: circ3;
+	}
+
+	.circ {
+		height: 115px;
+	}
+
+	.nuestraMision {
+		margin-top: 8rem;
+	}
+
+	iframe {
+		margin: 2rem 4rem 3rem 4rem;
+	}
+
+	.video {
+		justify-content: center;
+		align-content: center;
+	}
+
+	/*la app*/
+	.mockup1 {
+        width: 420px;
+		margin-left: 35rem;
+    }
+  
+    .txApp {
+        width: 900px;
+        height: 500px;
+        position: relative;
+        top: 1000;
+    }
+  
+    .infoApp {
+        display: flex;
+        justify-content: flex-start;
+        font-size: x-large;
+        font-weight: 600;
+        flex-wrap: nowrap;
+        margin-left: 3%;
+        margin-top: 20%;
+        width: 550px;
+    }
+
+	/*preguntas*/
+
+    .pregFrec {
+		font-family: "Raleway", sans-serif;
+		color: #a8003e;
+		font-weight: 800;
+		margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+	.divImagen {
+        height: 20%;
+		margin-bottom: 1rem;
+    }
+  
+    .imgMujeresVector {
+        width: 100%;
+		margin: 4rem 1rem 1rem 1rem;
+    }
+  
+	.preguntas{
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+    .parrafoPregs {
+        margin-bottom: 3rem;
+		font-size: larger;
+    }
+
+	.parrafoPregs3 {
+		padding-bottom: 7rem;
+		font-size: larger;
+	}
+
+	/*contactanos*/
+
+    input {
+		border-color: #a8003e;
+		border-radius: 12px;
+		border-width: 3px;
+		height: 50px;
+		width: 500px;
+		margin-bottom: 5rem;
+	}
+
+	.datos {
+		display: flex;
+		margin-top: 12rem;
+		justify-content: center;
+		align-items: center;
 	}
   
-	.nombreFooter {
+	.dat{
+		margin-bottom: 1rem;
+	}
+
+	.datMsj {
+		margin-bottom: 1rem;
+		height: 150px;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1199px)
+{
+	p,
+	button {
+		font-family: "Raleway", sans-serif;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	}
+
+	.bodyInicio {
+		background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/inspirational-quotes-for-women-index-1607056020.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*");
+		height: 100%;
+	}
+
+	/*nav*/
+	header {
+    background-color: #a8003e;
+  	}
+
+	.navBar {
+		list-style-type: none;
+		font-family: "Raleway", sans-serif;
+		text-decoration: none;
+	}
+
+	.itemNav {
+		text-decoration: none;
+	}
+
+	/*footer*/
+
+	.redes{
 		display: flex;
 		justify-content: space-between;
-		color: white;
-		font-size: larger;
-		align-items: center;
+		flex-direction: row;
+		padding: 1rem 3rem 1rem 3rem;
+		background-color: rebeccapurple;
+	}
+
+	.logoFooter {
+		justify-content: flex-start;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+    .nombreFooter {
+      color: white;
+    }
+
+	.logoWomapFooter{
+		width: 2rem;
+		height: 2rem;
+		margin-right: 1rem;
+	}
+
+	.icon {
+		width: 2rem;
+		height: 2rem;
+		margin-left: 2rem;
+		margin-right: 0.5rem;
 	}
 
 	/*pagina inicio*/
 
-    .inicio {
-		display: flex;
-		align-items: flex-start;
-		background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/tgam/KYDVDHE4JZEVRKQJ3W5JZ37RNU.png");
-		background-repeat: no-repeat;
-		background-size: 135%;
+	.inicio {
+		background-color: rgba(255, 255, 255, 0.493);
+		height: 100vh;
 	}
 
 	.imagenTexto {
-		height: 100%;
-		width: 100%;
-		margin: initial;
-		max-width: initial;
-		padding: 16% 5% 16% 0%;
-		background-color: rgba(255, 255, 255, 0.384);
-	}
-
-	.txInicio {
-		margin-left: 10%;
-	}
-  
-	body {
-		text-align: left;
-	}
-  
-	.itemTitTx {
-		font-size: 400%;
-	}
-  
-	#paragraph {
-		font-size: 150%;
-		font-weight: normal;
-	}
-  
-	.itemTx,
-	.itemTitTx {
-		margin-bottom: 2rem;
+		padding-top: 15rem;
+		padding-left: 7rem;
 	}
 	
-	.buttons {
-		display: flex;
-		flex-direction: column;
-	}
-
 	button {
 		border-color: #db0d58;
-		border-radius: 10px;
-		width: 80%;
-		height: 40px;
 		background-color: #e40657a4;
-		font-weight: 500;
 		color: white;
-		font-size: medium;
 	}
 
-	/*sobre Nosotras*/
-	.grid2 {
+	/*sobre nosotras*/
+
+    .titNos {
+		font-family: "Raleway", sans-serif;
+	}
+  
+	.mainNosotras {
+		  margin: 7rem 5rem 2rem 7rem;
+	}
+  
+	.grilla {
 		display: grid;
-		min-width: 100%;
-		grid-template-columns: 30% 70%;
-		grid-template-rows: auto auto auto;
+		grid-template-columns: 70% auto 1fr;
+		grid-template-rows: 25% 25% 45%;
 		grid-template-areas:
-			"nav body"
-      "nav mision"
-			"footer footer";
-		grid-column-gap: 0%;
-		margin-bottom: 0%;
-	}
-
-	header {
-		grid-area: nav;
-	}
-
-	body {
-		grid-area: body;
-	}
-
-	footer {
-		grid-area: footer;
+			"nosotras . circ1"
+			"nosotras circ2 ."
+			"nosotras . circ3";
+		grid-column-gap: 3%;
+		grid-row-gap: 2%;
+		max-height: 90vh;
 	}
   
-  .mision {
-    grid-area: mision;
-  }
-
-  .sobreNosotrasTx {
-    margin: 5% 5% 2% 8%;
-    font-size: small;
-  }
+	.sobreNosotrasTx {
+		grid-area: nosotras;
+	}
   
-  .pNos {
-    margin-bottom: 10%;
-  }
-
-  .titNos {
-    margin-bottom: 2%;
-    font-family: "Raleway", sans-serif;
-  }
-
-  #circ1,
-  #circ2,
-  #circ3 {
-    width: 100px;
-    justify-content: center;
-  }
-
-  .circTx1,
-  .circTx2,
-  .circTx3 {
-    margin-bottom: 2%;
-    margin-left: 40%;
-  }
-
-  .mision {
-    margin-left: 3%;
-  }
-
-  .video {
-    justify-content: start;
-  }
-
-  iframe {
-    margin: 5% 7% 5% 7%;
-    justify-content: start;
-  }
-
-  /*la App*/
+	.circTx1 {
+		grid-area: circ1;
+	}
+	  
+	.circTx2 {
+		grid-area: circ2;
+	}
+	  
+	.circTx3 {
+		grid-area: circ3;
+	}
   
-  .txImgApp {
-    justify-content: space-between;
-    align-items: center;
-    margin: 10% 5% 5% 5%;
-  }
+	.circ {
+		height: 130px;
+	}
+  
+	iframe {
+		margin: 2rem 10rem 3rem 10rem;
+	}
+  
+	.video {
+		justify-content: center;
+		align-content: center;
+	}
 
-  #txApp {
-    font-size: medium;
-  }
+	/*la app*/
 
-  .mockup1 {
-    width: 100%;
-    margin: 10% 5% 0% 5%;
-  }
+	.mockup1 {
+        width: 400px;
+		margin-left: 50rem;
+    }
+  
+    .txApp {
+        width: 900px;
+        height: 500px;
+        position: relative;
+        top: 1000;
+    }
+  
+    .infoApp {
+        display: flex;
+        justify-content: flex-start;
+        font-size: large;
+        font-weight: 600;
+        flex-wrap: nowrap;
+        margin-left: 3%;
+        margin-top: 25%;
+        width: 550px;
+    }
 
-  /*pregs*/
-  .divImagen {
-    height: 120%;
-  }
+	/*preguntas*/
 
-  #imgMujeresVector {
-    height: 90%;
-    width: 100%;
-    margin-top: 0%;
-  }
+    .pregFrec {
+		font-family: "Raleway", sans-serif;
+		color: #a8003e;
+		font-weight: 800;
+		margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+    }
 
-  #pregsFrec {
-    margin-top: 7%;
-    margin-bottom: 3%;
-  }
+	.divImagen {
+        height: 20%;
+		margin-bottom: 2rem;
+    }
+  
+    .imgMujeresVector {
+        width: 100%;
+		margin: 4rem 1rem 1rem 1rem;
+    }
+  
+	.preguntas{
+		margin-left: 5rem;
+		margin-right: 5rem;
+	}
+    .parrafoPregs {
+        margin-bottom: 3rem;
+		font-size: larger;
+    }
 
-  .pregFrec {
-    font-family: "Raleway", sans-serif;
-    color: #a8003e;
-    font-size: medium;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-  }
+	.parrafoPregs3 {
+		padding-bottom: 7rem;
+		font-size: larger;
+	}
 
-  .parrafoPregs {
-    margin-bottom: 2rem;
-    font-size: small;
-  }
+	/*contactanos*/
 
-  /*contactanos*/
-  .contacto {
-    height: 500px;
-    width: 500px;
-    padding: 10% 10% 5% 10%;
-    display: flex;
-  }
+    input {
+		border-color: #a8003e;
+		border-radius: 10px;
+		border-width: 3px;
+		height: 50px;
+		width: 600px;
+		margin-bottom: 5rem;
+	}
 
-  input {
-    height: 60px;
-    width: 100%;
-    margin-top: 1%;
-    justify-content: center;
-    border-radius: 8px;
-    border-color: #a8003e;
-  }
+	.datos {
+		display: flex;
+		margin-top: 12rem;
+		justify-content: center;
+		align-items: center;
+	}
+  
+	.dat{
+		margin-bottom: 1rem;
+	}
 
-  #datosMsj {
-    height: 120px;
-  }
-
-  form {
-    border-radius: 14px;
-  }
+	.datMsj {
+		margin-bottom: 1rem;
+		height: 150px;
+	}
 }
 
-@media (min-width: 768px)
+@media (min-width: 1200px)
 {
-    .container {
-      width: 90%;
-      margin: 0 auto;
-      max-width: 1400px;
-    }
 
     p,
     button {
@@ -367,292 +666,210 @@
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
 
-    header {
-      padding: 1% 1.5% 1% 1.5%;
-      background-color: #a8003e;
-      color: white;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      position: fixed;
-      width: 100%;
-      margin-top: 0%;
-    }
+	.bodyInicio {
+		background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/inspirational-quotes-for-women-index-1607056020.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*");
+		height: 100vh;
+	}
 
-    .row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    header {
+      background-color: #a8003e;
     }
 
     .navBar {
-      display: flex; /*nav bar en linea horizontal*/
-      list-style-type: none;
       font-family: "Raleway", sans-serif;
-      display: flex;
-      justify-content: flex-end;
-      text-decoration: none;
-      flex-wrap: nowrap;
     }
 
     .itemNav {
-      color: white; /*links de color a pesar de ser visitados o no*/
-      margin-left: 1.2rem;
 	  text-decoration: none;
     }
 
     /*pagina inicio*/
 
-    .inicio {
-      display: flex;
-      align-items: flex-start;
-      background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/inspirational-quotes-for-women-index-1607056020.jpg?crop=1.00xw:0.752xh;0,0.0913xh&resize=980:*");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+	.inicio {
+		background-color: rgba(255, 255, 255, 0.493);
+		height: 100vh;
+	}
 
-    .imagenTexto {
-      height: 100%;
-      width: 100%;
-      margin: initial;
-      max-width: initial;
-      padding: 16% 5% 16% 2%;
-      background-color: rgba(255, 255, 255, 0.658);
-    }
-
-    .txInicio {
-      margin-left: 5%;
-    }
-
-    body {
-      text-align: left;
-    }
-
-    .itemTitTx {
-      font-size: 400%;
-    }
-
-    #paragraph {
-      font-size: 150%;
-      font-weight: normal;
-    }
-
-    .itemTx,
-    .itemTitTx {
-      margin-bottom: 2rem;
-    }
-
-    button {
-      border-color: #db0d58;
-      border-radius: 12px;
-      width: 20%;
-      height: 40px;
-      background-color: #e40657a4;
-      font-weight: 500;
-      color: white;
-      font-size: medium;
-    }
+	.imagenTexto {
+		padding-top: 15rem;
+		padding-left: 7rem;
+	}
 
 	/*footer*/
-    footer {
-      display: flex;
-      background-color: rebeccapurple;
-      height: 15%;
-      padding: 1% 1% 1% 1%;
-      content: 20%;
-    }
 
-    .redes {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-    }
+	.redes{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		padding: 1rem 3rem 1rem 3rem;
+		background-color: rebeccapurple;
+	}
 
-    .logoFooter {
-      display: flex;
-      justify-content: space-between;
-    }
+	.logoFooter {
+		justify-content: flex-start;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
     .nombreFooter {
-      display: flex;
       color: white;
-      font-size: x-large;
     }
 
-    /*icon womap*/
-    .logoWomapFooter {
-      display: flex;
-      height: 2%;
-      width: 25%;
-    }
+	.logoWomapFooter{
+		width: 2rem;
+		height: 2rem;
+		margin-right: 1rem;
+	}
 
-
-    .icons {
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    .icon {
-      height: 2%;
-      width: 2%;
-      margin-left: 1.5rem;
-      margin-right: 0.3rem;
-    }
-
-    .iconTx {
-      font-weight: 600;
-    }
+	.icon {
+		width: 2rem;
+		height: 2rem;
+		margin-left: 2rem;
+		margin-right: 0.5rem;
+	}
 
     /*sobre nosotras*/
 
-    .grilla {
-      display: grid;
-      grid-template-columns: 70% auto 1fr;
-      grid-template-rows: 25% 25% 35%;
-      grid-template-areas:
-        "nosotras . circ1"
-        "nosotras circ2 ."
-        "nosotras . circ3";
-      grid-column-gap: 3%;
-      grid-row-gap: 2%;
-      padding-top: 8%;
-      max-height: 90vh;
-      margin: 0% 5% 3% 7%;
-    }
-
-    .grilla.sobreNosotrasTx {
-      grid-area: nosotras;
-    }
-
-    .circTx1 {
-      grid-area: circ1;
-    }
-    .circTx2 {
-      grid-area: circ2;
-    }
-    .circTx3 {
-      grid-area: circ3;
-    }
-
-    #nosP2 {
-      margin-top: 5%;
-      margin-bottom: 3%;
-    }
-
-    #circ1,
-    #circ2,
-    #circ3 {
-      width: 130px;
-    }
-
     .titNos {
-      margin-bottom: 2%;
       font-family: "Raleway", sans-serif;
     }
 
-    .pNos {
-      font-weight: 500;
-    }
+	.mainNosotras {
+		margin: 7rem 5rem 2rem 7rem;
+	}
 
-    .nuestraMision {
-      margin: 5% 5% 5% 3%;
-    }
+	.grilla {
+		display: grid;
+		grid-template-columns: 70% auto 1fr;
+		grid-template-rows: 25% 25% 45%;
+		grid-template-areas:
+			"nosotras . circ1"
+			"nosotras circ2 ."
+			"nosotras . circ3";
+		grid-column-gap: 3%;
+		grid-row-gap: 2%;
+		max-height: 90vh;
+	}
 
-    .video {
-      margin-top: 5%;
-      height: 100%;
-      justify-content: center;
-    }
+	.sobreNosotrasTx {
+		grid-area: nosotras;
+	}
 
-    iframe {
-      margin: 5% 13% 5% 13%;
-      width: 70%;
-      height: 100%;
-      justify-content: center;
-    }
+	.circTx1 {
+		grid-area: circ1;
+	}
+	
+	.circTx2 {
+		grid-area: circ2;
+	}
+	
+	.circTx3 {
+		grid-area: circ3;
+	}
+
+	.circ {
+		height: 130px;
+	}
+
+	iframe {
+		margin: 2rem 12rem 3rem 19rem;
+	}
+
+	.video {
+		justify-content: center;
+		align-content: center;
+	}
 
     /*la app*/
 
-    .mockup1 {
-      width: 450px;
-      margin-top: 20%;
-      margin-left: 1%;
-      display: flex;
+	.mockup1 {
+        width: 450px;
+		margin-left: 55rem;
     }
-
-    .txImgApp {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-
+  
     .txApp {
-      width: 900px;
-      height: 500px;
-      position: relative;
-      top: 1000;
+        width: 900px;
+        height: 500px;
+        position: relative;
+        top: 1000;
     }
-
-    #txApp {
-      display: flex;
-      justify-content: flex-start;
-      font-size: larger;
-      font-weight: 600;
-      flex-wrap: nowrap;
-      margin-left: 3%;
-      margin-top: 25%;
-      width: 700px;
-    }
-
-    /*contactanos*/
-
-    .contacto {
-      height: 500px;
-      width: 500px;
-      padding: 10% 10% 5% 10%;
-      display: flex;
-    }
-
-    input {
-      height: 60px;
-      width: 1000px;
-      margin-top: 1%;
-      justify-content: center;
-      border-radius: 8px;
-      border-color: #a8003e;
-    }
-
-    form {
-      border-radius: 14px;
+  
+    .infoApp {
+        display: flex;
+        justify-content: flex-start;
+        font-size: larger;
+        font-weight: 600;
+        flex-wrap: nowrap;
+        margin-left: 3%;
+        margin-top: 25%;
+        width: 700px;
     }
 
     /*preguntas*/
 
-    .divImagen {
-      height: 20%;
-    }
-
-    #imgMujeresVector {
-      height: 50%;
-      width: 100%;
-      margin-top: 5%;
-    }
-
-    #pregsFrec {
-      margin: 2%;
-    }
-
     .pregFrec {
-      font-family: "Raleway", sans-serif;
-      color: #a8003e;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
-      margin-top: 1.5rem;
+		font-family: "Raleway", sans-serif;
+		color: #a8003e;
+		font-weight: 800;
+		margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
     }
 
-    .parrafoPregs {
-      margin-bottom: 2rem;
+	.divImagen {
+        height: 20%;
+		margin-bottom: 2rem;
     }
+  
+    .imgMujeresVector {
+        width: 100%;
+		margin: 4rem 1rem 1rem 1rem;
+    }
+  
+	.preguntas{
+		margin-left: 7rem;
+		margin-right: 7rem;
+	}
+    .parrafoPregs {
+        margin-bottom: 3rem;
+		font-size: larger;
+    }
+
+	.parrafoPregs3 {
+		padding-bottom: 7rem;
+		font-size: larger;
+	}
+
+	/*contactanos*/
+
+    input {
+		border-color: #a8003e;
+		border-radius: 10px;
+		border-width: 3px;
+		height: 50px;
+		width: 600px;
+		margin-bottom: 5rem;
+	}
+
+	.datos {
+		display: flex;
+		margin-top: 10rem;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 2rem;
+	}
+  
+	.dat{
+		margin-bottom: 1rem;
+	}
+
+	.datMsj {
+		margin-bottom: 1rem;
+		height: 150px;
+	}
 }

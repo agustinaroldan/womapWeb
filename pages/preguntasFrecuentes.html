@@ -11,42 +11,47 @@
     />
     <title>Womap</title>
     <link href="../styles/styles.css" rel="stylesheet" />
-  </head>
-  	<section class="grid2">
-		<header>
-			<div class="container">
-				<div class="row">
-					<h1>Womap</h1>
-					<nav>
-					<ul class="navBar">
-						<li><a class="itemNav" href="../index.html"> Inicio </a></li>
-						<li>
-						<a class="itemNav" href="sobrenosotras.html"
-							>Sobre Nosotras</a
-						>
-						</li>
-						<li>
-						<a class="itemNav" href="laApp.html">La App</a>
-						</li>
-						<li>
-						<a class="itemNav" href="preguntasFrecuentes.html"
-							>Preguntas Frecuentes</a
-						>
-						</li>
-						<li>
-						<a class="itemNav" href="contactanos.html">Contactanos</a>
-						</li>
-					</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-		<body>
-			<head>
+ 	</head>
+  	<body>
+		<section class="grid2">
+			<header class="fixed-top">
 				<div class="container">
+					<div class="row">
+						<nav class="navbar navbar-expand-lg">
+							<div class="container-fluid">
+							  <a class="navbar-brand text-white fs-3" href="#">Womap</a>
+							  <button class="navbar-toggler w-25 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							  </button>
+							  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+								  <li class="nav-item">
+									<a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
+								  </li>
+								  <li class="nav-item">
+									<a class="nav-link active text-white" href="sobrenosotras.html">Sobre Nosotras</a>
+								  </li>
+								  <li class="nav-item">
+									<a class="nav-link text-white" href="laApp.html">La App</a>
+								  </li>
+								  <li class="nav-item">
+									<a class="nav-link text-white" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
+								  </li>
+								  <li class="nav-item">
+									<a class="nav-link text-white" href="contactanos.html">Contactanos</a>
+								  </li>
+								</ul>
+							  </div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<head>
+				<div>
 					<div class="divImagen">
 						<img
-							id="imgMujeresVector"
+							class="imgMujeresVector"
 							src="../img/Women-Vector-PNG-mascorto.png"
 							alt="vector mujeres"
 						/>
@@ -54,10 +59,10 @@
 				</div>
 			</head>
 			<section class="preguntas">
-				<div class="container">
+				<div>
 					<div class="pregs">
-						<h2 id="pregsFrec">Preguntas frecuentes</h2>
-						<div id="preg1">
+						<h1>Preguntas frecuentes</h1>
+						<div>
 							<div>
 								<h4 class="pregFrec">Pregunta 1</h4>
 							</div>
@@ -84,7 +89,7 @@
 								</p>
 							</div>
 						</div>
-						<div id="preg2">
+						<div>
 							<div>
 								<h4 class="pregFrec">Pregunta 2</h4>
 							</div>
@@ -104,12 +109,12 @@
 								</p>
 							</div>
 						</div>
-						<div id="preg3">
+						<div>
 							<div>
 								<h4 class="pregFrec">Pregunta 3</h4>
 							</div>
 							<div>
-								<p class="parrafoPregs">
+								<p class="parrafoPregs3">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 									Praesent risus risus, semper tempus suscipit in, consectetur eu
 									lectus. Curabitur vel tempus nisl. Proin vulputate ante at orci
@@ -126,34 +131,44 @@
 					</div>
 				</div>
 			</section>
-		</body>
-		<footer>
-			<div class="container">
-				<div class="redes">
-					<div class="logoFooter">
-						<!-- probar dispo logo -->
-						<img
-							class="logoWomapFooter"
-							src="../img/logo womap png redondeado-08.png"
-							alt="logo womap"
-						/>
-						<h4 class="nombreFooter">Womap</h4>
-					</div>
-					<div class="icons">
-						<!--redes-->
-						<img class="icon" src="../img/instagram.png" alt="icon instagram" />
-						<p class="iconTx">@WomapApp</p>
-						<img class="icon" src="../img/gorjeo.png" alt="icon twitter" />
-						<p class="iconTx">@WomapApp</p>
-						<img
-							class="icon"
-							src="../img/logotipo-de-linkedin.png"
-							alt="icon linkedin"
-						/>
-						<p class="iconTx">Womap</p>
+			<footer class="fixed-bottom">
+				<div>
+					<div class="fixed-bottom">
+						<div class="redes">
+							<div class="logoFooter">
+								<!-- probar dispo logo -->
+								<img
+									class="logoWomapFooter"
+									src="../img/logo womap png redondeado-08.png"
+									alt="logo womap"
+								/>
+								<h4 class="nombreFooter">Womap</h4>
+							</div>
+							<div class="icons">
+								<!--redes-->
+								<img class="icon" src="../img/instagram.png" alt="icon instagram" />
+								<p class="iconTx d-none d-lg-block">@WomapApp</p>
+								<img class="icon" src="../img/gorjeo.png" alt="icon twitter" />
+								<p class="iconTx d-none d-lg-block">@WomapApp</p>
+								<img
+									class="icon"
+									src="../img/logotipo-de-linkedin.png"
+									alt="icon linkedin"
+								/>
+								<p class="iconTx d-none d-lg-block">Womap</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-	</section>
+			</footer>
+		</section>
+		<!--bootstrap-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+		crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+	</body>
 </html>
