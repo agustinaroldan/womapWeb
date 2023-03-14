@@ -1,0 +1,32 @@
+/*grilla sobre nosotras*/
+@media (min-width: 991px) {
+
+    .grilla {
+		display: grid;
+		grid-template-columns: 70% auto 1fr;
+		grid-template-rows: 25% 25% 45%;
+		grid-template-areas:
+			"nosotras . circ1"
+			"nosotras circ2 ."
+			"nosotras . circ3";
+		grid-column-gap: 3%;
+		grid-row-gap: 2%;
+		max-height: 90vh;
+	}
+
+    .sobreNosotrasTx {
+		grid-area: nosotras;
+	}
+
+	.circTx1 {
+		grid-area: circ1;
+	}
+	
+	.circTx2 {
+		grid-area: circ2;
+	}
+	
+	.circTx3 {
+		grid-area: circ3;
+	}
+}

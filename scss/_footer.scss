@@ -1,0 +1,51 @@
+.redes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: $color-footer-bg;
+
+    .logoFooter {
+        justify-content: flex-start;
+		display: flex;
+		flex-direction: row;
+
+        .nombreFooter {
+            color: white;
+        }
+
+        .logoWomapFooter{
+            width: 2.5rem;
+            height: auto;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .icon {
+            width: 2.5rem;
+            height: auto;
+            margin-left: 1rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .redes{
+		padding: 1rem 3rem 1rem 3rem;
+
+        .logoWomapFooter{
+            margin-right: 1rem;
+        }
+
+        .icon {
+            margin-left: 2rem;
+        }
+	}
+
+}
