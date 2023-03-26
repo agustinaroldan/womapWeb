@@ -12,7 +12,12 @@
 		type="image/x-icon"
 		/>
 		<title>Womap | Contacto</title>
+
+		<!--estilo-->
 		<link href="../css/style.css" rel="stylesheet" />
+
+		<!--Js-->
+		<script type="text/javascript" src="../javascript/jsBoton.js"></script>
 	</head>
 	<body>
 		<header class="fixed-top">
@@ -39,7 +44,7 @@
 								<a class="nav-link text-white" href="preguntasFrecuentes.html">Preguntas Frecuentes</a>
 							  </li>
 							  <li class="nav-item">
-								<a class="nav-link text-white" href="contactanos.html">Contactanos</a>
+								<a class="nav-link text-white" href="contactanos.html"> <strong> Contactanos </strong></a>
 							  </li>
 							</ul>
 						  </div>
@@ -49,6 +54,7 @@
 			</div>
 		</header>
 		<main class="contacto">
+			<h1 class="titContacto"> ¡Contactanos! </h1>
 			<!--formulario-->
 			<div>
 				<div class="datos">
@@ -76,6 +82,9 @@
 					</form>
 				</div>
 			</div>
+			<div class="butEnviar">
+				<button class="botonEnviar btn btn-danger mb-3" onclick="mostrar ()"> Enviar </button>
+			</div>
 		</main>
 		<footer class="fixed-bottom">
 			<div>
@@ -93,15 +102,15 @@
 						<div class="icons">
 							<!--redes-->
 							<img class="icon" src="../img/instagram.png" alt="icon instagram" />
-							<p class="iconTx d-none d-lg-block">@WomapApp</p>
+							<p class="iconTx d-none d-lg-block my-0">@WomapApp</p>
 							<img class="icon" src="../img/gorjeo.png" alt="icon twitter" />
-							<p class="iconTx d-none d-lg-block">@WomapApp</p>
+							<p class="iconTx d-none d-lg-block my-0">@WomapApp</p>
 							<img
 								class="icon"
 								src="../img/logotipo-de-linkedin.png"
 								alt="icon linkedin"
 							/>
-							<p class="iconTx d-none d-lg-block">Womap</p>
+							<p class="iconTx d-none d-lg-block my-0">Womap</p>
 						</div>
 					</div>
 				</div>

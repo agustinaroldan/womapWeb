@@ -1,3 +1,13 @@
+main {
+    size: 100vh;
+}
+
+.titContacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
 input {
     border-color: $primary-color;
     border-radius: 10px;
@@ -8,7 +18,7 @@ input {
 }
 
 .datos {
-    margin: 12rem 1rem 2rem 0rem;
+    margin: 4rem 1rem 1rem 0rem;
     padding-left: 1rem;
     padding-right: 1rem;
     width: 100%;
@@ -18,12 +28,24 @@ input {
     }
 
     .datMsj {
-        margin-bottom: 1rem;
-        height: 180px;
+        margin-bottom: 0rem;
+        height: 120px;
+    }
+}
+
+.butEnviar {
+    padding: 0rem 1rem 1rem 1rem;
+
+    .botonEnviar {
+        width: 100%;
     }
 }
 
 @media (min-width: 576px) {
+    .titContacto {
+        font-size:xx-large;
+    }
+
     input {
         border-radius: 12px;
         width: 500px;
@@ -33,24 +55,51 @@ input {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 6rem;
         
         .datMsj {
-            height: 150px;
+            height: 110px;
+        }
+    }
+
+    .butEnviar {
+        display: flex;
+        justify-content: center;
+    
+        .botonEnviar {
+            width: 500px;
         }
     }
 }
 
 @media (min-width: 991px) {
+    .titContacto {
+        justify-content: flex-start;
+        margin-left: 7rem;
+    }
+    
     input {
         border-radius: 10px;
         width: 600px;
+    }
+
+    .datos {
+        margin-top: 4.5rem;
+    }
+
+    .butEnviar {
+        display: flex;
+        justify-content: center;
+    
+        .botonEnviar {
+            width: 600px;
+        }
     }
 }
 
 @media (min-width: 1200px) {
     .datos {
-        margin-top: 10rem;
-        padding-bottom: 2rem;
+        margin-top: 4rem;
     }
 }
 
